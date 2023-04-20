@@ -15,21 +15,5 @@ export default function useLocalStorage(key, baslangicDegeri) {
   return [storedValue, setValue];
 }
 
-//2. Yöntem:
 
-// import { useState } from "react";
-
-// export default function useLocalStorage(key, baslangicDegeri) {
-//   const [value, setValue] = useState(() => {
-//     const storedValue = localStorage.getItem(key);
-//     return storedValue !== null ? JSON.parse(storedValue) : baslangicDegeri;
-//   });
-
-//   const setStoredValue = (newValue) => {
-//     setValue(newValue);
-//     localStorage.setItem(key, JSON.stringify(newValue));
-//   };
-
-//   return [value, setStoredValue];
-// }
 
